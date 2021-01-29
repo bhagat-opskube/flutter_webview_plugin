@@ -49,7 +49,6 @@ public class FlutterWebviewPlugin implements MethodCallHandler, PluginRegistry.A
 
     @Override
     public void onMethodCall(MethodCall call, MethodChannel.Result result) {
-        Log.w("WebviewManager"," onMethodCall call -> result");
         switch (call.method) {
             case "launch":
                 openUrl(call, result);
@@ -67,7 +66,6 @@ public class FlutterWebviewPlugin implements MethodCallHandler, PluginRegistry.A
                 reload(call, result);
                 break;
             case "back":
-                Log.w("WebviewManager"," back button click -> back");
                 back(call, result);
                 break;
             case "forward":
@@ -141,12 +139,10 @@ public class FlutterWebviewPlugin implements MethodCallHandler, PluginRegistry.A
             webViewManager = new WebviewManager(activity, context, channelNames);
         }
 
-
         FrameLayout.LayoutParams params = buildLayoutParams(call);
 
         activity.addContentView(webViewManager.webView, params);
 
-//        webViewManager.
         webViewManager.openUrl(withJavascript,
                 clearCache,
                 hidden,

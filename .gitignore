@@ -9,8 +9,10 @@ build/
 ios/.generated/
 packages
 pubspec.lock
-
+.dart_tool
+example/.dart_tool/
 example/ios/Podfile.lock
+example/.flutter-plugins-dependencies
 **/Flutter/App.framework/
 **/Flutter/Flutter.framework/
 **/Flutter/Generated.xcconfig/

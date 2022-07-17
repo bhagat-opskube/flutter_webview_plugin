@@ -2,9 +2,6 @@ package io.flutter.plugins;
 
 import androidx.annotation.Keep;
 import androidx.annotation.NonNull;
-
-import com.flutter_webview_plugin.FlutterWebviewPlugin;
-
 import io.flutter.Log;
 
 import io.flutter.embedding.engine.FlutterEngine;
@@ -19,7 +16,7 @@ public final class GeneratedPluginRegistrant {
   private static final String TAG = "GeneratedPluginRegistrant";
   public static void registerWith(@NonNull FlutterEngine flutterEngine) {
     try {
-      flutterEngine.getPlugins().add(new FlutterWebviewPlugin());
+      flutterEngine.getPlugins().add(new com.flutter_webview_plugin.FlutterWebviewPlugin());
     } catch(Exception e) {
       Log.e(TAG, "Error registering plugin flutter_webview_plugin, com.flutter_webview_plugin.FlutterWebviewPlugin", e);
     }

@@ -13,7 +13,7 @@ version: 0.1.0
 maintainer: Bhagat Singh
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=2.16.1 <3.0.0"
 
 flutter:
   plugin:
@@ -25,6 +25,10 @@ dependencies:
     sdk: flutter
 
 dev_dependencies:
-  mockito: ^4.1.0
+  mockito: ^5.2.0
   flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_driver:
     sdk: flutter
